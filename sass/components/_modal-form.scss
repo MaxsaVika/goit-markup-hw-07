@@ -1,0 +1,95 @@
+.form-label {
+    position: relative;
+    display: block;
+    margin-bottom: 28px;
+}
+
+.form-name {
+    position: absolute;
+    top: -18px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 10px 10px 42px;
+
+    font-size: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms var(--timing-function)
+}
+
+.modal-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+
+    transform: translateY(-50%);
+    fill: var(--title-text-color);
+    transition: fill 250ms var(--timing-function);
+}
+
+textarea.form-input {
+    resize: none;
+    height: 120px;
+    padding-left: 12px;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+}
+
+.form-input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+.form-label:focus-within .modal-icon {
+    fill: var(--accent-color);
+}
+
+.agreement {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.modal-send-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: #188CE8;
+}
