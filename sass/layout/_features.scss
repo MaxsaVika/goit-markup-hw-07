@@ -1,16 +1,16 @@
-.features-list {
+.features {
     display: flex;
     margin-top: -30px;
     margin-left: -30px;
 }
 
-.features-item {
+.features__item {
     flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
     margin-left: 30px;
 }
 
-.features-icon {
+.features__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
     background-color: var(--secondary-bg-color);
 }
 
-.features-list .title {
+.features__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -31,7 +31,7 @@
     color: var(--title-text-color);
 }
 
-.features-content {
+.features__content {
     margin-top: 0;
     margin-bottom: 0;
 

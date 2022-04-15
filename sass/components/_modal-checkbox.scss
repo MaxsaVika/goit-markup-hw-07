@@ -14,20 +14,19 @@
     border-radius: 2px;
 
     transition: border-color 250ms var(--timing-function);
-}
 
-.checkbox:checked+.checkbox-icon {
-    background-color: var(--accent-color);
-    background-image: url('../img/icon-check.svg');
-    background-size: contain;
-    background-origin: border-box;
-    border-color: var(--accent-color);
-}
+    .checkbox:checked+& {
+        background-color: var(--accent-color);
+        background-image: url('../img/icon-check.svg');
+        background-size: contain;
+        background-origin: border-box;
+        border-color: var(--accent-color);
+    }
 
-.checkbox:focus+.checkbox-icon {
-    /* background-color: var(--accent-color); */
-    border-color: var(--accent-color);
-    outline: none;
+    .checkbox:focus+& {
+        border-color: var(--accent-color);
+        outline: none;
+    }
 }
 
 .checkbox-label {

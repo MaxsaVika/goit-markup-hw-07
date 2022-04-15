@@ -14,12 +14,21 @@
 
     transition: background-color 250ms var(--timing-function);
 
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
 }
 
 .social-icon {
     fill: var(--icon-color);
     transition: fill 250ms var(--timing-function);
 
+    .social-icon-link:hover &,
+    .social-icon-link:focus & {
+        fill: var(--white-text-color);
+    }
 }
 
 .footer-social-icon-link {
@@ -37,14 +46,3 @@
 .footer-social-icon {
     fill: var(--white-text-color);
 }
-
-.social-icon-link:hover,
-.social-icon-link:focus {
-    background-color: var(--accent-color);
-}
-
-.social-icon-link:hover .social-icon,
-.social-icon-link:focus .social-icon {
-    fill: var(--white-text-color);
-}
-

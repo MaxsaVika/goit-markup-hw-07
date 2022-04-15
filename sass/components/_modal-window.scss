@@ -11,10 +11,10 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
-}
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
 }
 
 .close-btn {
@@ -32,12 +32,14 @@
 
 .close-icon {
     transition: fill 250ms var(--timing-function);
+
+    .close-btn:hover &,
+    .close-btn:focus & {
+        fill: var(--accent-color);
+    }
 }
 
-.close-btn:hover .close-icon,
-.close-btn:focus .close-icon {
-    fill: var(--accent-color);
-}
+
 
 .modal-title {
     margin: 0;

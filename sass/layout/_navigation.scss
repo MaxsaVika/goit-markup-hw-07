@@ -1,12 +1,12 @@
-.nav-main {
+.nav {
     margin-left: 93px;
 }
 
-.nav-list {
+.nav__list {
     display: flex;
 }
 
-.nav-link {
+.nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -18,35 +18,35 @@
     color: var(--title-text-color);
 
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.nav-list-item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--accent-color);
-}
-
-.nav-list-item {
+.nav__item {
     position: relative;
 }
 
-.nav-link.current {
+.nav__link_current {
     color: var(--accent-color);
-}
 
-.current::after {
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 4px;
-
-    content: "";
-    background: var(--accent-color);
-    border-radius: 2px;
+    &::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: 0;
+    
+        width: 100%;
+        height: 4px;
+    
+        content: "";
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
 }
